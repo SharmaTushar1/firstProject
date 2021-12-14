@@ -1,0 +1,110 @@
+@use "sass-modules/variables" as v;
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 32px;
+  color: white;
+  font-family: "Spartan", sans-serif;
+  background-color: v.$Main-background;
+}
+
+.container {
+  padding: 2rem;
+}
+
+// triple toggle switch
+.firstRow {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.calc {
+  font-size: 2rem;
+}
+
+.right {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  .theme {
+    position: relative;
+    top: 0.5rem;
+    font-size: 0.8rem;
+    display: inline-block;
+    width: fit-content;
+    height: 0.8rem;
+    margin-right: 1.5rem;
+  }
+}
+
+.center {
+  .number {
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 0.8rem;
+    margin-bottom: 0.1rem;
+  }
+}
+
+.theme-toggle {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  background-color: v.$Very-dark-desaturated-blue2;
+  border-radius: 1rem;
+  padding: 0.1rem;
+}
+
+.custom-radio-button {
+  display: flex;
+  width: 1.3rem;
+  height: 1.3rem;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+
+  .checkmark {
+    width: calc(100% - 6px);
+    height: calc(100% - 6px);
+    height: calc(100% - 6px);
+    background-color: hsl(6, 63%, 50%);
+    border-radius: 100%;
+    display: inline-block;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+}
+.custom-radio-button input {
+  display: none;
+}
+
+.custom-radio-button input:checked + .checkmark {
+  opacity: 1;
+  display: inline-block;
+}
+
+// calculator display
+.secondRow {
+  padding: 0 1.5rem;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  height: 5rem;
+  border-radius: 1rem;
+  background-color: v.$Very-dark-desaturated-blue3;
+  margin-top: 1.5rem;
+  align-items: center;
+}
+
+.thirdRow {
+  margin-top: 1.5rem;
+  width: 100%;
+  background-color: v.$Very-dark-desaturated-blue2;
+  border-radius: 1rem;
+}

@@ -3,8 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
-
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@500;700&family=Space+Mono:wght@400;700&family=Spartan:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/style.css" />
     <link
       rel="icon"
       type="image/png"
@@ -14,5 +19,51 @@
 
     <title>Frontend Mentor | Calculator app</title>
   </head>
-  <body></body>
+  <body>
+    <div class="container">
+      <div class="firstRow">
+        <div class="calc">calc</div>
+        <div class="right">
+          <div class="theme">THEME</div>
+
+          <!-- radio -->
+          <div class="center">
+            <div class="number">
+              <span>1</span>
+              <span>2</span>
+              <span>3</span>
+            </div>
+            <div class="theme-toggle">
+              <label class="custom-radio-button">
+                <input id="first" name="toggle-state" type="radio" checked />
+                <span class="checkmark"></span>
+              </label>
+
+              <label class="custom-radio-button">
+                <input id="second" name="toggle-state" type="radio" />
+                <span class="checkmark"></span>
+              </label>
+
+              <label class="custom-radio-button">
+                <input id="third" name="toggle-state" type="radio" />
+                <span class="checkmark"></span>
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="secondRow">399,981</div>
+      <div class="thirdRow">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+      </div>
+    </div>
+  </body>
 </html>
