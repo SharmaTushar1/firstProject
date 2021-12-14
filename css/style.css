@@ -99,8 +99,29 @@ body {
 }
 
 .thirdRow {
+  grid-gap: 1rem;
+  box-sizing: border-box;
+  padding: 1rem;
+  display: grid;
   margin-top: 1.5rem;
   width: 100%;
   background-color: #232c43;
   border-radius: 1rem;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 4rem);
+}
+.thirdRow button {
+  font-family: "Spartan", sans-serif;
+  font-size: 2rem;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.5rem;
+  background-color: #eae3dc;
+  color: #444b5a;
+}
+.thirdRow .reset,
+.thirdRow .equal {
+  grid-column: span 2;
 }/*# sourceMappingURL=style.css.map */
