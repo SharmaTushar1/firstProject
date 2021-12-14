@@ -127,6 +127,11 @@ body {
     border-radius: 0.5rem;
     background-color: v.$Light-grayish-orange;
     color: v.$Very-dark-grayish-blue;
+
+    &:active {
+      margin-top: 0.3rem;
+      border: 0;
+    }
   }
 
   .del,
@@ -141,7 +146,6 @@ body {
   .reset,
   .equal {
     padding: 0;
-
     grid-column: span 2;
     font-size: 1rem;
   }

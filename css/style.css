@@ -123,6 +123,10 @@ body {
   background-color: #eae3dc;
   color: #444b5a;
 }
+.thirdRow button:active {
+  margin-top: 0.3rem;
+  border: 0;
+}
 .thirdRow .del,
 .thirdRow .reset {
   padding: 0;
