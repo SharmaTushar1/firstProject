@@ -103,7 +103,7 @@ body {
 }
 
 .thirdRow {
-  grid-gap: 1rem;
+  grid-gap: 0.8rem;
   box-sizing: border-box;
   padding: 1rem;
   display: grid;
@@ -116,9 +116,11 @@ body {
   grid-template-rows: repeat(5, 4rem);
 
   button {
+    padding-top: 0.5rem;
     font-family: "Spartan", sans-serif;
-    font-size: 2rem;
+    font-size: 1.8rem;
     border: none;
+    border-bottom: 0.3rem solid v.$Grayish-orange;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -127,8 +129,25 @@ body {
     color: v.$Very-dark-grayish-blue;
   }
 
+  .del,
+  .reset {
+    padding: 0;
+    background-color: v.$Desaturated-dark-blue;
+    color: white;
+    font-size: 1rem;
+    border-bottom: 0.3rem solid v.$Desaturated-dark-blue2;
+  }
+
   .reset,
   .equal {
+    padding: 0;
+
     grid-column: span 2;
+    font-size: 1rem;
+  }
+  .equal {
+    background-color: v.$Red;
+    border-bottom: 0.3rem solid v.$Dark-red;
+    color: white;
   }
 }
