@@ -95,7 +95,7 @@ body{
     border-radius: 0.5rem;
     padding: 1.5rem;
     display: grid;
-    /*Do some magic with grid here watch tutorials on grids first*/
+    /*Do some magic with grid*/
     grid-template-columns: repeat(4,auto);
     grid-template-rows: repeat(5,1fr);
     row-gap: 1.5vh;
@@ -114,14 +114,23 @@ body{
     border-radius: 5px;
 }
 
+.keys:active {
+    transform: scale(0.9);
+    background-color: hsl(27, 4%, 55%);
+    /* Scaling button to 0.98 to its original size */
+    box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+    border: none;
+    /* Lowering the shadow */
+}
+
 .gray{
     background-color: hsl(225, 21%, 49%);
     color: white;
 }
 
 .gray:active {
-    transform: scale(0.9);
-    background-color: hsl(228, 4%, 47%);
+    /* transform: scale(0.9); */
+    background-color: hsl(225, 14%, 44%);
     /* Scaling button to 0.98 to its original size */
     box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
     /* Lowering the shadow */
@@ -130,11 +139,24 @@ body{
 .large-keys:active{
     transform: scale(0.9);
     box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+    border: none;
 }
+
+/*code for making the text un selectable*/
+
+.noselect {
+    -webkit-touch-callout: none; /* iOS Safari */
+      -webkit-user-select: none; /* Safari */
+       -khtml-user-select: none; /* Konqueror HTML */
+         -moz-user-select: none; /* Firefox */
+          -ms-user-select: none; /* Internet Explorer/Edge */
+              user-select: none; /* Non-prefixed version, currently
+                                    supported by Chrome and Opera */
+  }
 
 .orange:active{
     background-color: hsl(6, 61%, 35%);
-    box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24)
+    box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
 }
 
 .orange{
@@ -162,13 +184,7 @@ body{
     cursor: pointer;
 }
 
-.keys:active {
-    transform: scale(0.9);
-    background-color: hsl(27, 4%, 55%);
-    /* Scaling button to 0.98 to its original size */
-    box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
-    /* Lowering the shadow */
-}
+
 
 .gray{
     border-bottom: 3px solid hsl(224, 28%, 35%);
