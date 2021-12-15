@@ -6,6 +6,8 @@
 
 body{
     background-color: hsl(222, 26%, 31%);
+    font-family: 'Spartan', sans-serif;
+    color: white;
 }
 
 #container{
@@ -13,7 +15,7 @@ body{
     flex-direction: column;
     justify-content: center;
     margin: auto;
-    width: 50vw;
+    width: 300px;
     height: 100vh;
 }
 
@@ -29,6 +31,19 @@ body{
 
 #theme{
     display: flex;
+    font-size: x-small;
+    position: relative;
+    align-items: flex-end;
+}
+
+#name{
+    font-size: x-large;
+}
+
+#theme-txt{
+    margin-right: 1rem;
+    position: absolute;
+    bottom: 0;
 }
 
 #theme span{
@@ -40,11 +55,13 @@ body{
     height: 1rem;
     width: 3rem;
     background-color: hsl(223, 31%, 20%);
+    border-radius: 0.5rem;
 }
 
 #theme-number{
     position: relative;
-    bottom: 1.25rem;
+    bottom: 1rem;
+    width: 3rem;
     display: flex;
     justify-content: space-evenly;
 }
@@ -59,8 +76,14 @@ body{
     border-radius: 0.5rem;
 }
 
-#toggle{
-    background-color: hsl(223, 31%, 20%);
+#circle{
+    background-color: hsl(6, 63%, 50%);
+    height: 0.8rem;
+    width: 0.8rem;
+    border-radius: 50%;
+    position: relative;
+    bottom: 0.65rem;
+    left: 0.1rem;
 }
 
 /*lower body / keys and keypad stying*/
@@ -68,10 +91,102 @@ body{
 #keypad{
     background-color: hsl(223, 31%, 20%);
     width: 100%;
+    margin-top: 20px;
+    border-radius: 0.5rem;
+    padding: 1.5rem;
     display: grid;
     /*Do some magic with grid here watch tutorials on grids first*/
+    grid-template-columns: repeat(4,auto);
+    grid-template-rows: repeat(5,1fr);
+    row-gap: 1.5vh;
+    column-gap: 1.5vw;
+    color: hsl(221, 14%, 31%);
 
 }
+
+.keys{
+    background-color: hsl(30, 25%, 89%);
+    height: 2rem;
+    /* text-align: center; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+}
+
+.gray{
+    background-color: hsl(225, 21%, 49%);
+    color: white;
+}
+
+.gray:active {
+    transform: scale(0.9);
+    background-color: hsl(228, 4%, 47%);
+    /* Scaling button to 0.98 to its original size */
+    box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+    /* Lowering the shadow */
+}
+
+.large-keys:active{
+    transform: scale(0.9);
+    box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+}
+
+.orange:active{
+    background-color: hsl(6, 61%, 35%);
+    box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24)
+}
+
+.orange{
+    background-color: hsl(6, 63%, 50%);
+    color: white;
+}
+
+.k1{
+    grid-column: 1/3;
+}
+
+.large-keys{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+}
+
+.keys,.large-keys{
+    border-bottom: 3px solid hsl(28, 16%, 65%);
+    transition: 0.2s all;
+}
+
+.keys:hover,.large-keys:hover{
+    cursor: pointer;
+}
+
+.keys:active {
+    transform: scale(0.9);
+    background-color: hsl(27, 4%, 55%);
+    /* Scaling button to 0.98 to its original size */
+    box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+    /* Lowering the shadow */
+}
+
+.gray{
+    border-bottom: 3px solid hsl(224, 28%, 35%);
+    font-size: x-small;
+}
+
+.orange{
+    border-bottom: 3px solid hsl(6, 70%, 34%);
+    font-size: x-small;
+}
+
+.k2{
+    grid-column: 3/5;
+}
+
+
+
+
 
 
 /* 
