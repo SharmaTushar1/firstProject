@@ -1,43 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator</title>
-    <link rel="stylesheet" href="./solution/style.css" />
-    <link
-      rel="shortcut icon"
-      href="images/favicon-32x32.png"
-      type="image/x-icon"
-    />
-  </head>
-  <body>
-    <div id="container">
-      <div id="upper-body">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="images/favicon-32x32.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div id="container">
+
+    <div id="upper-body">
         <div id="name">calc</div>
-        <div id="theme">
-          <span>THEME</span>
+        <div id="theme"><span id = "theme-txt">THEME</span>
 
-          <div id="switcher">
-            <div id="theme-number">
-              <span class="theme-no">1</span><span class="theme-no">2</span
-              ><span class="theme-no">3</span>
+            <div id="switcher">
+                <div id="theme-number">
+                    <span class="theme-no">1</span><span class="theme-no">2</span><span class="theme-no">3</span>
+                </div>
+                <div id="circle"></div>
             </div>
-            <div id="toggler">
-              <div id="circle"></div>
-            </div>
-          </div>
+
         </div>
-      </div>
+    </div>
 
-      <div id="screen"></div>
+    <div id="screen">
+        
+    </div>
 
-      <div id="keypad">
+    <div id="keypad">
         <div class="keys">7</div>
         <div class="keys">8</div>
         <div class="keys">9</div>
-        <div class="keys">DEL</div>
+        <div class="keys gray">DEL</div>
         <div class="keys">4</div>
         <div class="keys">5</div>
         <div class="keys">6</div>
@@ -50,9 +51,11 @@
         <div class="keys">0</div>
         <div class="keys">/</div>
         <div class="keys">x</div>
-        <div class="large-keys reset">RESET</div>
-        <div class="large-keys equal">=</div>
-      </div>
+        <div class="large-keys k1 gray">RESET</div>
+        <div class="large-keys k2 orange">=</div>
     </div>
-  </body>
+
+</div>
+    
+</body>
 </html>
