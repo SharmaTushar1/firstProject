@@ -1,0 +1,45 @@
+@use "../sass-modules/variables" as v;
+
+body {
+  background-color: v.$Very-dark-violet1;
+}
+
+.theme,
+.calc,
+.center {
+  color: v.$Light-yellow;
+}
+
+.theme-toggle {
+  background-color: v.$Very-dark-violet2;
+  .checkmark {
+    background-color: v.$Pure-cyan;
+  }
+}
+.secondRow {
+  background-color: v.$Very-dark-violet2;
+  color: v.$Light-yellow;
+}
+
+.thirdRow {
+  background-color: v.$Very-dark-violet2;
+
+  button {
+    background-color: v.$Very-dark-violet3;
+    color: v.$Light-yellow;
+    border-color: v.$Dark-magenta;
+  }
+
+  .del,
+  .reset {
+    background-color: v.$Dark-violet;
+    border-color: v.$Vivid-magenta;
+  }
+  .equal {
+    background-color: v.$Pure-cyan;
+    border-color: v.$Soft-cyan;
+    color: v.$Very-dark-blue;
+  }
+}
+
+// keys

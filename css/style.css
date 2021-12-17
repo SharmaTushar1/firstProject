@@ -8,6 +8,7 @@
 
   .container {
     width: 33.33%;
+    min-width: 400px;
   }
   .container .secondRow {
     padding: 3rem 2rem;

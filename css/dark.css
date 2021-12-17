@@ -1,0 +1,40 @@
+body {
+  background-color: #160628;
+}
+
+.theme,
+.calc,
+.center {
+  color: #ffe53d;
+}
+
+.theme-toggle {
+  background-color: #1d0934;
+}
+.theme-toggle .checkmark {
+  background-color: #00e0d1;
+}
+
+.secondRow {
+  background-color: #1d0934;
+  color: #ffe53d;
+}
+
+.thirdRow {
+  background-color: #1d0934;
+}
+.thirdRow button {
+  background-color: #341c4f;
+  color: #ffe53d;
+  border-color: #871c9c;
+}
+.thirdRow .del,
+.thirdRow .reset {
+  background-color: #58077d;
+  border-color: #bc15f4;
+}
+.thirdRow .equal {
+  background-color: #00e0d1;
+  border-color: #6cf9f2;
+  color: #1b2428;
+}/*# sourceMappingURL=dark.css.map */
