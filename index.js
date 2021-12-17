@@ -1,5 +1,6 @@
 // variables
 const output = document.querySelector(".secondRow");
+<<<<<<< HEAD
 // buttons
 const buttons = document.getElementsByClassName("button");
 const del = document.querySelector(".del");
@@ -14,6 +15,18 @@ const times = document.querySelector(".x");
 for (let i = 0; i < buttons.length; i++) {
   buttons[i].addEventListener("click", function () {
     output.insertAdjacentHTML("beforeend", buttons[i].innerHTML);
+=======
+const operators = document.querySelectorAll(".operator");
+// buttons
+const buttons = document.getElementsByClassName("button");
+
+for (let i = 0; i < buttons.length; i++) {
+  buttons[i].addEventListener("click", function () {
+    let btn = button[i].innerHTML;
+    if (btn !== "DEL" && btn !== "RESET") {
+      output.insertAdjacentHTML("beforeend", buttons[i].innerHTML);
+    }
+>>>>>>> parent of b62ae40 (Update index.js)
 
     calculate();
   });
