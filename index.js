@@ -13,9 +13,9 @@ for (let i = 0; i < themeButtons.length; i++) {
     if (tb.id == "first") {
       document.getElementById("switcher-id").href = " ";
     } else if (tb.id == "second") {
-      document.getElementById("switcher-id").href = "./css/light.css";
+      document.getElementById("switcher-id").href = "css-themes/light.css";
     } else if (tb.id == "third") {
-      document.getElementById("switcher-id").href = "./css/dark.css";
+      document.getElementById("switcher-id").href = "css-themes/dark.css";
     }
   });
 }
