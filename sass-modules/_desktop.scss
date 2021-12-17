@@ -1,13 +1,1 @@
-@use "variables" as v;
-
-@media screen and (min-width: 768px) {
-  body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-  }
-  .container {
-    width: 33%;
-  }
-}
+@use "sass-modules/variables" as v;
