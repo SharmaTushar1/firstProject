@@ -1,6 +1,6 @@
 // variables
 const output = document.querySelector(".secondRow");
-const operators = document.querySelectorAll(".operator");
+const operators = ["+", "-", "/", "*"];
 // buttons
 const buttons = document.getElementsByClassName("button");
 const themeButtons = document.querySelectorAll("input");
@@ -34,7 +34,7 @@ for (let i = 0; i < buttons.length; i++) {
     if (btn == "DEL") {
       output.innerHTML = output.innerHTML.slice(0, -1);
     }
-    if (previousCharacter == btn && buttons[i].classList.contains("operand")) {
+    if (operators.includes(previousCharacter) && operators.includes(btn)) {
       console.log("the two are the same");
     } else if (btn !== "DEL" && btn !== "RESET" && btn !== "=") {
       output.insertAdjacentHTML("beforeend", buttons[i].innerHTML);
