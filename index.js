@@ -1,6 +1,6 @@
 // variables
 const output = document.querySelector(".secondRow");
-const operators = ["+", "-", "/", "*", "."];
+const operators = ["+", "-", "/", "*", "x"];
 // buttons
 const buttons = document.getElementsByClassName("button");
 const themeButtons = document.querySelectorAll("input");
@@ -50,9 +50,11 @@ for (let i = 0; i < buttons.length; i++) {
 }
 
 function calculate() {
-  if (math.evaluate(output.innerHTML) > 0) {
-    output.innerHTML = math.evaluate(output.innerHTML);
+  let preOutput = output.innerHTML.replace(/x/g, "*");
+
+  if (math.evaluate(preOutput) > 0) {
+    output.innerHTML = math.evaluate(preOutput);
   } else {
-    output.innerHTML = math.evaluate(output.innerHTML).toFixed(2);
+    output.innerHTML = math.evaluate(preOutput).toFixed(2);
   }
 }
