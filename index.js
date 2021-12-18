@@ -23,11 +23,19 @@ for (let i = 0; i < themeButtons.length; i++) {
 for (let i = 0; i < buttons.length; i++) {
   buttons[i].addEventListener("click", function () {
     let btn = buttons[i].innerHTML;
+    let previousCharacter = output.innerHTML.substring(
+      output.innerHTML.length - 1,
+      output.innerHTML.length
+    );
+
     if (btn == "RESET") {
       output.innerHTML = " ";
     }
     if (btn == "DEL") {
       output.innerHTML = output.innerHTML.slice(0, -1);
+    }
+    if (previousCharacter == btn && buttons[i].classList.contains("operand")) {
+      console.log("the two are the same");
     } else if (btn !== "DEL" && btn !== "RESET" && btn !== "=") {
       output.insertAdjacentHTML("beforeend", buttons[i].innerHTML);
     }
@@ -39,5 +47,9 @@ for (let i = 0; i < buttons.length; i++) {
 }
 
 function calculate() {
-  output.innerHTML = math.evaluate(output.innerHTML);
+  if (math.evaluate(output.innerHTML) > 0) {
+    output.innerHTML = math.evaluate(output.innerHTML);
+  } else {
+    output.innerHTML = math.evaluate(output.innerHTML).toFixed(2);
+  }
 }

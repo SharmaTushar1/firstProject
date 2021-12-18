@@ -93,6 +93,7 @@ body {
 
 // calculator display
 .secondRow {
+  overflow: hidden;
   padding: 0 1.5rem;
   box-sizing: border-box;
   display: flex;
