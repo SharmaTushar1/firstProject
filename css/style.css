@@ -109,6 +109,8 @@ body {
 }
 
 .secondRow {
+  white-space: nowrap;
+  text-overflow: ellipsis;
   overflow: hidden;
   padding: 0 1.5rem;
   box-sizing: border-box;
